@@ -18,6 +18,36 @@
     <title>Shortly</title>
   </head>
   <body>
-    <div class="h1 text-3xl">Simple Tailwind Starter</div>
+    <!-- Nav Container -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex Container For All Items -->
+      <div class="flex items-center justify-between ">
+        <!-- Flex Container For Logo/Menu -->
+        <div class="flex items-cetner space-x-20">
+          <!-- Logo -->
+          <img src="images/logo.svg" alt="logo" class="w-full  bg-gray-100" />
+          <!-- Left Menu -->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Features</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Pricing</a
+            >
+            <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
+              >Resources</a
+            >
+          </div>
+
+        </div>
+        <!-- Right Buttons Menu -->
+         <div class="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex">
+            <a href="#" class="hover:text-veryDarkViolet">Login</a>
+            <a href="#" class="bg-brightViolet px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-80">Sign Up</a>
+         </div>
+         <!-- @todo Hamburger Menu -->
+      </div>
+      <!-- @todo Mobile Menu -->
+    </nav>
   </body>
 </html>
