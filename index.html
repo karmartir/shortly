@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
     <title>Shortly</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
         <!-- Flex Container For Logo/Menu -->
         <div class="flex items-cetner space-x-20">
           <!-- Logo -->
-          <img src="images/logo.svg" alt="logo" class="w-full bg-gray-100" />
+          <img src="images/logo.svg" alt="logo" class="w-full" />
           <!-- Left Menu -->
           <div class="hidden space-x-8 font-bold lg:flex">
             <a href="#" class="text-grayishViolet hover:text-veryDarkViolet"
@@ -99,7 +100,8 @@
         >
           <input
             type="text"
-            class="flex-1 p-3 border-2 rounded-lg placeholder-orange-500 focus:outline-none"
+            class="flex-1 p-3 border-2 rounded-lg placeholder-cyan-500
+           focus:outline-none"
             placeholder="Shorten a link here..."
             id="link-input"
           />
@@ -109,6 +111,10 @@
           >
             Shorten It!
           </button>
+          <!-- Error Message -->
+           <div id="err-msg" class="absolute left-7 bottom-3 text-red text-sm italic">
+            
+           </div>
         </form>
         <!-- Link 1 -->
         <div
